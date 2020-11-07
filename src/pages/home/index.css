@@ -1,0 +1,54 @@
+.home {
+  display: flex;
+  width: 100%;
+  font-size: 24px;
+  background: #f0f5f5;
+  height: 100%;
+}
+.home .ant-card {
+  height: 13rem                             ;
+}
+.home .ant-card .ant-card-body {
+  font-size: 1.625rem;
+  padding: 1.125rem;
+}
+.home .ant-card .ant-card-body .card-static {
+  display: flex;
+  flex-wrap: wrap;
+}
+.home .ant-card .ant-card-body .text {
+  display: flex;
+  font-size: 0.875rem;
+  transform: translateY(10%);
+}
+.home .ant-card .ant-card-body .views-line {
+  display: flex;
+  width: 100%;
+  height: 3.9375rem;
+}
+.home .ant-card .ant-card-body .pay-bar {
+  display: flex;
+  width: 100%;
+  height: 3.9375rem;
+}
+.home .ant-card .ant-card-body .feedback {
+  display: flex;
+  width: 100%;
+  height: 6.266875rem;
+}
+.home .CardSales {
+  padding-top: 1.25rem;
+  height: 25rem;
+}
+.home .CardSales .sales-line {
+  width: 80%;
+  height: 16.875rem;
+  margin-left: 2.5rem;
+}
+.home .Row-Capacity {
+  padding-top: 1.25rem;
+}
+.home .Row-Capacity .Liquid {
+  width: 100%;
+  height: 100%;
+}

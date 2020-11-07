@@ -1,0 +1,47 @@
+.header{
+    height: 80px;
+    background-color: #fff ;
+    .header-top{
+        border-bottom: 1px solid #1da57a;
+        height: 40px;
+        line-height: 40px;
+        text-align: right;
+        right: 10px;
+        padding-right: 30px;
+        // margin-right: 20px;
+    }
+    .header-bottom{
+        height: 40px;
+        display: flex;
+        .header-bottom-left{
+            position: relative;
+            width: 25%;
+            text-align: center;
+            font-size: 20px;
+            &::after{
+                content: '';
+                position: absolute;
+                right: 50%;//此时针对于left父元素正中间的％50 并不能达到真正居中
+                transform:translateX(50%);  //此时才能真正的居中伪元素的right在父元素left的百分之50的位置之后再加上translateX X轴正向移动百分之50即可达到真正居中
+                top: 100% ;
+                border-top:20px solid white;
+                border-right:20px solid transparent;
+                border-bottom:20px solid transparent;
+                border-left:20px solid transparent;
+                
+            }
+        }
+        .header-bottom-right{
+            text-align: right;
+            line-height: 40px;
+            width: 75%;
+            margin-right: 20px;
+            img{
+                margin:0 10px;
+                width: 30px;
+                
+                
+            }
+        }
+    }
+}
