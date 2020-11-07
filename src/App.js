@@ -9,6 +9,7 @@ import {} from './utils/storageUtils'
 function App() {
   return (
     <HashRouter>
+      {/* 我是新增备注 */}
       <Switch>{/* 只匹配其中一个 */}
       <Route path="/login" component={Login}></Route>
       <Route path="/" component={Admin}></Route>
