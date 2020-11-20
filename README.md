@@ -12,9 +12,9 @@
 3.  下载mongodb
 
 #### 使用说明
-
-1.  运行服务器 npm start
-2.  运行项目 npm start
+1.  安装依赖 npm i
+2.  运行服务器 npm start
+3.  运行项目 npm start
 
 
 #### 参与贡献
