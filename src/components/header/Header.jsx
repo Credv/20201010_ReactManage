@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import './index.less'
 import menuList from '../../config/menuConfig'
-import { Menu, Dropdown, Modal, Button, Space } from 'antd';
+import { Menu, Dropdown, Modal, Button } from 'antd';
 import { DownOutlined, ExclamationCircleOutlined } from '@ant-design/icons';
 import { formateDate } from '../../utils/dateUtils'
 import { withRouter, useHistory } from 'react-router-dom';
 //user数据
 import memoryUtils from '../../utils/memoryUtils'
-import { getUser,removeUser } from '../../utils/storageUtils'
+import { removeUser } from '../../utils/storageUtils'
 import currentUser from '../../utils/memoryUtils'
 
 const { confirm } = Modal;
@@ -44,7 +44,12 @@ function Header(props) {
     },[props.location.pathname])//尝试下
     //如果不传第二个参数的话，它就等价于componentDidMount和componentDidUpdate
     
-   
+    const getTime = () => {
+        intId = setInterval(() => {
+            setCurrentTime(formateDate(Date.now()))
+        }, 1000)
+        
+    }
     const showConfirm = () => {
         confirm({
             title: '您确定要退出系统吗？',
@@ -66,12 +71,7 @@ function Header(props) {
             },
         });
     }
-    const getTime = () => {
-        intId = setInterval(() => {
-            setCurrentTime(formateDate(Date.now()))
-        }, 1000)
-        
-    }
+   
     const menu = (
         <Menu>
             <Menu.Item>

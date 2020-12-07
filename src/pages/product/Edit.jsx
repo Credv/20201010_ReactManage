@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react'
-import { Card, Form, Button, Input, Select, Cascader, message, Upload, Modal, Spin } from 'antd'
+import { Card, Form, Button, Input, Cascader, message, Upload, Modal, Spin } from 'antd'
 import { ArrowLeftOutlined, PlusOutlined } from '@ant-design/icons'
 import { reqCategorys, reqFindOneProduct } from '../../api/index'
-import PicturesWall from './PicturesWall'
+// import PicturesWall from './PicturesWall'
 import { reqAddProducts, reqDelImg, reqUpdateProduct } from '../../api/index'
 import { useHistory, useParams } from 'react-router-dom'
 
-const Option = Select.Option
+// const Option = Select.Option
 const { TextArea } = Input;
 
 const formItemLayout = {
@@ -178,12 +178,12 @@ function Edit(props) {
 
     };
     //获取子组件（图片）的值 暂时废弃 子组件搬迁到父组件
-    const getImgUrl = (file) => {
-        // console.log(file);
-        if (file.status === 'done') {
-            setImgUrl(file.response.data.name)
-        }
-    }
+    // const getImgUrl = (file) => {
+    //     // console.log(file);
+    //     if (file.status === 'done') {
+    //         setImgUrl(file.response.data.name)
+    //     }
+    // }
     //2.改变
     const handleCancel = () => setPreviewVisible(false); //关闭预览
 

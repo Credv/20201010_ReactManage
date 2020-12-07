@@ -1,12 +1,12 @@
 import React from 'react'
 import { QuestionCircleOutlined, LikeOutlined } from '@ant-design/icons'
 import { Card, Statistic, Row, Col } from 'antd'
-import {Liquid } from '@ant-design/charts'
+// import {Liquid } from '@ant-design/charts'
 function GridThird() {
-    const option = {
-        percent: 0.75,
+    // const option = {
+    //     percent: 0.75,
         
-    }
+    // }
     return (
         <div>
             <Card

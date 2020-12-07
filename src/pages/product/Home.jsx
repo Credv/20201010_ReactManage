@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import { useHistory, useParams } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import { Card, Table, Input, Select, Button, Popconfirm, message } from 'antd'
 import { reqProducts, reqDelProducts, reqSearchProductsName, reqSearchProductsDesc, reqUpdateState } from '../../api/index'
 import { PAGE_SIZE } from '../../utils/constant'
-import { PullRequestOutlined } from '@ant-design/icons'
+// import { PullRequestOutlined } from '@ant-design/icons'
 const Option = Select.Option
 /**
  * 产品主页面

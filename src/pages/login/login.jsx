@@ -1,14 +1,13 @@
 
 import React from 'react'
-import { useHistory, Redirect } from 'react-router-dom'
+import {  Redirect } from 'react-router-dom'
 import './login.less'
 import logo from '../../assets/images/logo.png'
 import { Form, Input, Button, Checkbox, message } from 'antd'
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
-import Password from 'antd/lib/input/Password';
 import { reqLogin } from '../../api/index'
 import memoryUtils from '../../utils/memoryUtils'
-import {setUser,getUser,removeUser} from '../../utils/storageUtils'
+import {setUser} from '../../utils/storageUtils'
 /**
  * 登录的路由组件
  */

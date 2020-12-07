@@ -5,7 +5,6 @@ import React, { useState, useEffect } from 'react'
 import { Card, Button, Table, Modal, Form, Input, message, Tree } from 'antd'
 import { PAGE_SIZE } from '../../utils/constant'
 import { reqRoles, reqAddRoles,reqUpdateRoles,reqDelRoles } from '../../api'
-import menuList from '../../config/menuConfig'
 import {formateDate} from '../../utils/dateUtils'
 
 function Role() {

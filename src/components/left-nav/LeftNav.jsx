@@ -17,7 +17,7 @@ function LeftNav(props) {
         const { key, isPublic } = item
         const menus = memoryUtils.user.role.menus
         const username = memoryUtils.user.username
-        if (username === 'admin' || isPublic || menus.indexOf(key) != -1) {
+        if (username === 'admin' || isPublic || menus.indexOf(key) !== -1) {
             return true
         }
         return false
